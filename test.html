@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <link rel='shortcut icon' type='image/png' href='avat.png'>
+    <link rel="stylesheet" href="style_index.css">
+    <title>The Maze</title>
+</head>
+
+<body style="background-color:black">
+    
+    <div class=backgr id=backgr1 onmousemove="showCoords(event)" onmouseout="clearCoords()">
+            <div class="wall" onmouseover="Restart1()" style="width: 360px; height: 120px; top:0px; left:230px;">1</div>
+            <div class="wall" onmouseover="Restart1()" style="width: 230px; height: 100px; top:0px;">2</div>
+            <div class="wall" onmouseover="Restart()" style="width: 100px; height: 140px; top:0px; left:590px;">3</div>
+            <div class="wall" onmouseover="Restart1()" style="width: 330px; height: 40px; bottom:0px; left:260px;">4</div>
+            <div class="wall" onmouseover="Restart()" style="width: 170px; height: 120px; bottom:70px; left:230px;">5</div>
+            <div class="wall" onmouseover="Restart()" style="width: 160px; height: 150px; bottom:40px; left:430px;">6</div>
+            <div class="wall" onmouseover="Restart()" style="width: 80px; height: 190px; top:120px; left:760px;">7</div>
+            <div class="wall" onmouseover="Restart1()" style="width: 70px; height: 330px; bottom:0px; left:590px;">8</div>
+            <div class="wall" onmouseover="Restart1()" style="width: 40px; height: 340px; top:0px; left:690px;">9</div>
+            <div class="wall" onmouseover="Restart()" style="width: 180px; height: 80px; bottom:0px; left:660px;">10</div>
+            <div class="wall" onmouseover="Restart1()" style="width: 60px; height: 380px; bottom:0px; left:840px;">11</div>
+            <div class="wall" onmouseover="Restart()" style="width: 170px; height: 90px; top:0px; right:0px;">12</div>
+            <div class="wall" onmouseover="Restart()" style="width: 20px; height: 50px; top:80px; left:902px;">13</div>
+            <div class="wall" onmouseover="Restart1()" style="width: 100px; height: 100px; top:100px; left:130px;">14</div>
+            <div class="wall" onmouseover="Restart()" style="width: 230px; height: 270px; bottom:0px; left:0px;">15</div>
+            <div class="wall" onmouseover="Restart1()" style="width: 100px; height: 100px; top:130px; left:0px;">16</div>
+            <div class="wall" onmouseover="Restart()" style="width: 30px; height: 30px; bottom:0px; left:230px;">17</div>
+            <div class="wall" onmouseover="Restart1()" style="width: 120px; height: 50px; top:340px; left:690px;">18</div>
+            <div class="door" id="door" onmouseover="Restart()" style="width: 30px; height: 50px; bottom: 70px; left: 730px;"></div>
+            <button class="win"  onclick="Win2()" style="width: 30px; height:30px; top: 90px; right:0px;"></button>
+            <div class="win2"  style="width: 30px; height:30px; top: 100px; left:0px;"></div>
+            <button onclick="Door()" class="act_button" style="bottom:10px; left: 230px;"></button>
+            <div id="obst1" onmouseover="Restart()" style="left: 270px; top: 120px;"></div>
+            <div id="obst2" onmouseover="Restart1()" style="left: 340px; top: 120px;"></div>
+            <div id="obst3" onmouseover="Restart1()" style="left: 450px; top: 120px;"></div>
+            <div id="obst4" onmouseover="Restart()" style="left: 520px; top: 120px;"></div>
+            <div class="wall" onmouseover="Restart1_2()" style="width: 140px; height: 50px; top:250px; left:20px; color:white;">
+                <div class="obst" style="top:10px; left:0px;;"></div><div style="text-align:center; position: relative; top: 16px; left: 15px; font-family:Arial, Helvetica, sans-serif"> - Niggaballs<br>(avoid them)</div>
+                
+            </div>
+        </div>
+</body>
+
+</html>
+
+<script src="script.js">  
+</script>

@@ -1,0 +1,140 @@
+<html>
+
+<head>
+    <link rel='shortcut icon' type='image/png' href='avat.png'>
+    <link rel="stylesheet" href="style_index.css">
+    <meta name="keywords" content="maze,horror,scary,puzzle">
+    <title>The Maze</title>
+</head>
+
+<body style="background-color:black">
+    <img src="logo1.png" style="position:absolute; top: -105px; left: 410px; width: 540px;">
+    <div class="coords">
+        <p id="demo">X coords: 0, Y coords: 0</p>
+    </div>
+    <div id="ready" class="ready">
+        <div style="font-size: 50px; text-align:center; color: white; top: 40%; position: relative;">Are you
+            ready?<br>Press "Start!"</div>
+    </div>
+    <div id="over" class="over">
+        <div style="font-size: 50px; text-align:center; color: white; top: 35%; position: relative;">Game over!</div>
+        <button class="restart" onclick="window.location.reload()">Restart</button>
+    </div>
+    
+    <div id="win" class="youwin">
+        <div style="font-size: 50px; text-align:center; color: white; top: 35%; position: relative;">You won!</div>
+        <button class="restart" onclick="window.location.reload()">Restart</button>
+    </div>
+    <div class=backgr id=backgr1 onmousemove="showCoords(event)" onmouseout="clearCoords()">
+        <div class="wall" onmouseover="Restart1()" style="width: 220px; height: 290px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 190px; height: 180px; bottom:0px;"></div>
+        <div class="wall" onmouseover="Restart()" style="width: 210px; height: 430px; top:0px; left:220px;"></div>
+        <div class="wall" onmouseover="Restart()" style="width: 270px; height: 40px; bottom:0px; left:190px;"></div>
+        <div class="wall" onmouseover="Restart()" style="width: 100px; height: 460px; bottom:0px; left:460px;"></div>
+        <div class="wall" onmouseover="Restart()" style="width: 160px; height: 10px; top:0px; left:430px;"></div>
+        <div class="wall" onmouseover="Restart()" style="width: 220px; height: 300px; top:0px; left:590px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 100px; height: 170px; bottom:0px; left:560px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 120px; height: 100px; top:300px; left:690px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 180px; height: 70px; bottom:0px; left:660px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 60px; height: 300px; bottom:0px; left:840px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 90px; height: 170px; top:0px; left:810px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 20px; height: 50px; top:160px; left:902px;"></div>
+        <button class="win" onclick="Win()" style="width: 30px; height:30px; top: 170px; right:0px;"></button>
+        <div class="win2" onmouseover="myTimer()" style="width: 30px; height:30px; top: 290px; left:0px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 300px; height: 100px; top:50px; left:50px; color:white;">
+            <div class="win" style="width: 30px; height:30px; top: 10px; left:0px;"></div><div style="position: relative; top: 15px; left: 35px; font-family:Arial, Helvetica, sans-serif"> - goal (click it to reach the next level)</div>
+            <div class="win2" style="width: 30px; height:30px; top: 60px; left:0px;"></div><div style="position: relative; top: 48px; left: 35px; font-family:Arial, Helvetica, sans-serif"> - start</div>
+        </div>
+    </div>
+
+    <div class=backgr2 id=backgr2 onmousemove="showCoords(event)" onmouseout="clearCoords()">
+        <div class="wall" onmouseover="Restart1()" style="width: 360px; height: 40px; top:0px; left:230px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 230px; height: 100px; top:0px;"></div>
+        <div class="wall" onmouseover="Restart()" style="width: 70px; height: 170px; top:0px; left:590px;"></div>
+        <div class="wall" onmouseover="Restart()" style="width: 330px; height: 40px; bottom:0px; left:260px;"></div>
+        <div class="wall" onmouseover="Restart()" style="width: 300px; height: 390px; bottom:40px; left:260px;"></div>
+        <div class="wall" onmouseover="Restart()" style="width: 130px; height: 100px; top:200px; left:560px;"></div>
+        <div class="wall" onmouseover="Restart()" style="width: 180px; height: 80px; top:0px; left:660px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 70px; height: 170px; bottom:0px; left:590px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 120px; height: 250px; top:110px; left:690px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 180px; height: 110px; bottom:0px; left:660px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 60px; height: 300px; bottom:0px; left:840px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 60px; height: 170px; top:0px; left:840px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 20px; height: 50px; top:90px; right:902px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 100px; height: 300px; top:100px; left:130px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 260px; height: 70px; bottom:0px; left:0px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 100px; height: 300px; bottom:70px; left:0px;"></div>
+        <div class="door" id="door" onmouseover="Restart()" style="width: 30px; height: 50px; bottom: 60px; left: 160px;"></div>
+        <div class="win2"  style="width: 30px; height:30px; top: 170px; right:0px;"></div>
+        <button class="win" onclick="Win2()" style="width: 30px; height:30px; top: 100px; left:0px;"></button>
+        <button onclick="Door()" class="act_button" style="bottom:40px; right: 310px;"></button>
+        <div class="wall" onmouseover="Restart1()" style="width: 230px; height: 100px; top:80px; left:290px; color:white;">
+            <div class="act_button" style="top:10px; left:0px;;"></div><div style="text-align:center; position: relative; top: 15px; left: 15px; font-family:Arial, Helvetica, sans-serif"> - button (click it to unlock <br>the path)</div>
+            <div class="door" style="width: 30px; height: 50px; top: 65px; left: 0px;"></div><div style="position: relative; top: 48px; left: 40px; font-family:Arial, Helvetica, sans-serif"> - door</div>
+        </div>
+    </div>
+
+    <div class=backgr2 id=backgr3 onmousemove="showCoords(event)" onmouseout="clearCoords()">
+        <div class="wall" onmouseover="Restart1()" style="width: 360px; height: 120px; top:0px; left:230px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 230px; height: 100px; top:0px;"></div>
+        <div class="wall" onmouseover="Restart()" style="width: 100px; height: 140px; top:0px; left:590px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 330px; height: 40px; bottom:0px; left:260px;"></div>
+        <div class="wall" onmouseover="Restart()" style="width: 170px; height: 120px; bottom:70px; left:230px;"></div>
+        <div class="wall" onmouseover="Restart()" style="width: 160px; height: 150px; bottom:40px; left:430px;"></div>
+        <div class="wall" onmouseover="Restart()" style="width: 80px; height: 190px; top:120px; left:760px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 70px; height: 330px; bottom:0px; left:590px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 40px; height: 340px; top:0px; left:690px;"></div>
+        <div class="wall" onmouseover="Restart()" style="width: 180px; height: 80px; bottom:0px; left:660px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 60px; height: 380px; bottom:0px; left:840px;"></div>
+        <div class="wall" onmouseover="Restart()" style="width: 170px; height: 90px; top:0px; right:0px;"></div>
+        <div class="wall" onmouseover="Restart()" style="width: 20px; height: 50px; top:80px; left:902px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 100px; height: 100px; top:100px; left:130px;"></div>
+        <div class="wall" onmouseover="Restart()" style="width: 230px; height: 270px; bottom:0px; left:0px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 100px; height: 100px; top:130px; left:0px;"></div>
+        <div class="wall" onmouseover="Restart()" style="width: 30px; height: 30px; bottom:0px; left:230px;"></div>
+        <div class="wall" onmouseover="Restart1()" style="width: 120px; height: 50px; top:340px; left:690px;"></div>
+        <div class="door" id="door2" onmouseover="Restart()" style="width: 30px; height: 50px; bottom: 70px; left: 730px;"></div>
+        <button class="win"  onclick="Win3()" style="width: 30px; height:30px; top: 90px; right:0px;"></button>
+        <div class="win2"  style="width: 30px; height:30px; top: 100px; left:0px;"></div>
+        <button onclick="Door2()" class="act_button" style="bottom:10px; left: 230px;"></button>
+        <div id="obst1" onmouseover="Restart()" style="left: 270px; top: 120px;"></div>
+        <div id="obst2" onmouseover="Restart1()" style="left: 340px; top: 120px;"></div>
+        <div id="obst3" onmouseover="Restart1()" style="left: 450px; top: 120px;"></div>
+        <div id="obst4" onmouseover="Restart()" style="left: 520px; top: 120px;"></div>
+        <div class="wall" onmouseover="Restart1_2()" style="width: 140px; height: 50px; top:250px; left:20px; color:white;">
+            <div class="obst" style="top:10px; left:0px;;"></div><div style="text-align:center; position: relative; top: 16px; left: 15px; font-family:Arial, Helvetica, sans-serif"> - Fireballs<br>(avoid them)</div>    
+        </div>
+    </div>
+    <div class="rules">
+        <div class="rules_1">Rules:</div>
+        You are stuck in a maze and you must escape.<br>
+        1.Don't touch the walls!<br>
+        2.Reach the goal to win the level!<br>
+        3.For a better experience use headphones and play at night!<br>
+        4.Rise up the volum!<br>
+        5.Please adjust the zoom of the site if you don't see the page properly.<br>
+    </div>
+
+    <button class="start" onclick="showDiv()">Start!</button>
+    <div class="tltimer">Timer
+        <div class="timer"><label id="seconds">0</label> seconds</div>
+    </div>
+    <button class="support" onclick="window.location.href='https://www.paypal.me/SerbanBogdan';">Support me</button>
+    <div style="position: absolute; top: 620px; left:20px; font-size: 20px; border-top: solid white 1px;">
+
+        <div style="color:white; font-size: 15px; top: 10px; position: relative;">by Iustinian Serban<br>
+            Title design by Eduard Donea
+        </div>
+
+    </div>
+
+    <div class="jumpscare" id="jumpscare">
+        <img src=jumpscare1.jpg width="100%" height="100%">
+        <button class="restart1" onclick="window.location.reload()">Restart</button>
+    </div>
+</body>
+
+</html>
+
+<script src="script.js">  
+</script>

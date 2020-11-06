@@ -1,0 +1,302 @@
+.backgr {
+    background-color: rgb(30, 41, 139);
+    width: 900px;
+    height: 500px;
+    border: 2px solid black;
+    top: 160px;
+    left: 280px;
+    position: absolute;
+    border: white 1px solid;
+    border-radius: 2px;
+}
+
+.backgr2 {
+    background-color: rgb(30, 41, 139);
+    width: 900px;
+    height: 500px;
+    border: 2px solid black;
+    top: 160px;
+    left: 280px;
+    display: none;
+    position: absolute;
+    border: white 1px solid;
+    border-radius: 2px;
+}
+
+.rules {
+    width: 229px;
+    height: 355px;
+    position: absolute;
+    top: 15px;
+    left: 22px;
+    text-align: center;
+    font-size: 22px;
+    border: 2px solid rgb(180, 180, 180);
+    background-color: rgb(112, 112, 112);
+    border-radius: 5px;
+}
+
+.rules_1 {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    font-size: 25px;
+    border-bottom: 2px solid rgb(134, 8, 8);
+    background-color: rgb(172, 18, 18);
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.coords {
+    position: absolute;
+    top: 10px;
+    left: 1060px;
+    width: 230px;
+    border-radius: 2px;
+    height: 55px;
+    border-style: solid;
+    border-width: 2px 0px 2px 0px;
+    border-color: rgb(168, 0, 0);
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    color: white;
+}
+
+.start {
+    position: absolute;
+    top: 380px;
+    left: 22px;
+    width: 230px;
+    height: 60px;
+    font-size: 25px;
+    border-radius: 2px;
+    background-color: rgb(151, 151, 151);
+    border: rgb(124, 124, 124) solid 1px;
+}
+
+.support {
+    position: absolute;
+    top: 560px;
+    left: 22px;
+    width: 230px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 2px;
+    background-color: rgb(151, 151, 151);
+    border: rgb(124, 124, 124) solid 1px;
+}
+
+.tltimer {
+    position: absolute;
+    top: 460px;
+    left: 60px;
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    font-size: 28px;
+    border-radius: 10px;
+    color: white;
+}
+
+.timer {
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    border-style: solid;
+    border-width: 2px 0px 2px 0px;
+    border-color: rgb(168, 0, 0);
+    text-align: center;
+    font-size: 25px;
+    border-radius: 10px;
+    color: white;
+}
+
+.ready {
+    background-color: rgb(0, 0, 0);
+    width: 900px;
+    border-radius: 2px;
+    display: block;
+    height: 500px;
+    border: 2px solid black;
+    top: 160px;
+    left: 280px;
+    position: absolute;
+    z-index: 1;
+    border: rgb(39, 38, 38) 1px solid;
+    border-radius: 2px;
+}
+
+.over {
+    background-color: rgb(0, 0, 0);
+    width: 900px;
+    display: none;
+    height: 500px;
+    border: 2px solid black;
+    top: 160px;
+    left: 280px;
+    position: absolute;
+    z-index: 1;
+    border: rgb(39, 38, 38) 1px solid;
+    border-radius: 2px;
+}
+
+.jumpscare {
+    display: none;
+    width: 99%;
+    height: 99%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.youwin {
+    background-color: rgb(141, 0, 0);
+    width: 900px;
+    display: none;
+    height: 500px;
+    border: 2px solid black;
+    top: 160px;
+    left: 280px;
+    position: absolute;
+    z-index: 1;
+    border: rgb(39, 38, 38) 1px solid;
+    border-radius: 2px;
+}
+
+.show {
+    display: none;
+}
+
+.show1 {
+    display: block;
+}
+
+.show2 {
+    display: block;
+}
+
+.wall {
+    position: absolute;
+    background-color: black;
+    color: aliceblue;
+    
+
+}
+
+.door {
+    position: absolute;
+    background-color: rgb(9, 114, 0);
+    border: solid black 2px;
+    color: aliceblue;
+    display: block;
+
+}
+
+.showDoor {
+    display: none;
+}
+.showDoor2 {
+    display: none;
+}
+
+.restart {
+    position: absolute;
+    background-color: rgb(151, 151, 151);
+    border: white 1px solid;
+    top: 250px;
+    left: 344px;
+    width: 212px;
+    height: 60px;
+    font-size: 25px;
+    border-radius: 2px;
+}
+
+.restart1 {
+    position: absolute;
+    background-color: rgb(151, 151, 151);
+    border: white 1px solid;
+    top: 630px;
+    left: 10px;
+    width: 150px;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 2px;
+}
+
+.win {
+    position: absolute;
+    background-color: yellow;
+    border: solid black 1px;
+}
+
+.win:hover{
+    background-color: rgb(177, 177, 0);
+}
+.win2 {
+    position: absolute;
+    background-color: red;
+    border: solid black 1px;
+}
+
+.act_button {
+    position: absolute;
+    background-color: rgb(17, 201, 0);
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+}
+
+.act_button:hover {
+    background-color: rgb(10, 117, 1);
+}
+.obst {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 100%;
+    background-color: rgb(255, 81, 0);
+    border: solid 1px rgb(173, 55, 0);
+  }
+
+#obst1 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 100%;
+    background-color: rgb(255, 81, 0);
+    border: solid 1px rgb(173, 55, 0);
+  }
+
+  #obst2 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 100%;
+    background-color: rgb(255, 81, 0);
+    border: solid 1px rgb(173, 55, 0);
+  }
+  #obst3 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 100%;
+    background-color: rgb(255, 81, 0);
+    border: solid 1px rgb(173, 55, 0);
+  }
+  #obst4 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 100%;
+    background-color: rgb(255, 81, 0);
+    border: solid 1px rgb(173, 55, 0);
+  }
